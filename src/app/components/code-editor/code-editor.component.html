@@ -1,0 +1,16 @@
+<div class="editor-container">
+  <div class="editor-toolbar">
+    <div class="editor-toolbar-theme">
+      <p>Theme :</p>
+      <select (change)="getSelectedTheme()" [(ngModel)]="selectedTheme">
+        <option value="Dark" selected>Dark</option>
+        <option value="Light">Light</option>
+      </select>
+    </div>
+    <button (click)="runCode()">Run</button>
+  </div>
+  <div #editor class="editor-content"></div>
+</div>
+@if (errorMsg !== '') {
+<div class="errorMsg">{{ errorMsg }}</div>
+}
