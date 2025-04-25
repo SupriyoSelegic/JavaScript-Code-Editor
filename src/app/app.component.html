@@ -2,14 +2,14 @@
   <h1>Rule Condition Code Editor</h1>
   <app-code-editor
     [initialValue]="defaultCode"
-    [ruleType]="'condition'"
+    [type]="'condition'"
     (codeChange)="onCodeChange($event)"
   ></app-code-editor>
   <br />
   <h1>Rule Action Code Editor</h1>
   <app-code-editor
     [initialValue]="defaultCode"
-    [ruleType]="'action'"
+    [type]="'action'"
     (codeChange)="onCodeChange($event)"
   ></app-code-editor>
 </div>
